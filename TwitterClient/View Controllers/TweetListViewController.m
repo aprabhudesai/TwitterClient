@@ -64,7 +64,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  self.tableViewTopSpaceConstraint.constant = self.navigationController.navigationBar.bounds.size.height + 20;
+  if (self.navigationController.navigationBar) {
+    self.tableViewTopSpaceConstraint.constant = self.navigationController.navigationBar.bounds.size.height + 20;
+  }
   UIPanGestureRecognizer *gestureRecog = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onPanGesture:)];
   gestureRecog.delegate = self;
   
