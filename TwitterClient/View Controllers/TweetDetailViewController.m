@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIView *replyContainer;
 @property (weak, nonatomic) IBOutlet UITextField *replyTextField;
 
+@property (weak, nonatomic) IBOutlet UIButton *replyToTweetButton;
 
 // Constraints
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *profileContainerTopSpaceConstraint;

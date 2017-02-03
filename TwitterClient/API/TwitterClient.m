@@ -247,10 +247,10 @@ NSString * const kTwitterBaseURL = @"https://api.twitter.com";
   ];
 }
 
-- (void)replyToTweet:(NSNumber *)tweetId withText:(NSString *)text onSuccess:(void (^)(NSDictionary *))success onFailure:(void (^)(NSError *))failure {
+- (void)replyToTweet:(NSString *)tweetId withText:(NSString *)text onSuccess:(void (^)(NSDictionary *))success onFailure:(void (^)(NSError *))failure {
   NSString *encodedText = [text stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
   [self
-   POST:[NSString stringWithFormat:@"1.1/statuses/update.json?status=%@&in_reply_to_status_id=%ld", encodedText, [tweetId longValue]]
+   POST:[NSString stringWithFormat:@"1.1/statuses/update.json?status=%@&in_reply_to_status_id=%@", encodedText, tweetId]
    parameters: nil
    progress:nil
    success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

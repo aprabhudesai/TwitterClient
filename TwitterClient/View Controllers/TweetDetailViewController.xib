@@ -18,6 +18,7 @@
                 <outlet property="profileImageView" destination="eKa-6C-RyF" id="UOh-vU-aV6"/>
                 <outlet property="replyContainer" destination="D7t-wH-6D1" id="gqx-aa-4eo"/>
                 <outlet property="replyTextField" destination="spF-8J-nWS" id="MZh-Pw-7F4"/>
+                <outlet property="replyToTweetButton" destination="3Bm-Un-cf2" id="ojC-eR-Oge"/>
                 <outlet property="retweetButton" destination="PnB-Z1-PxC" id="u64-a1-IUA"/>
                 <outlet property="retweetContainer" destination="J4J-8w-BLv" id="XWF-u6-ieu"/>
                 <outlet property="retweetCountLabel" destination="8tA-y7-XCe" id="apw-hA-qOm"/>
