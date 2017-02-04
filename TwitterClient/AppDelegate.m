@@ -62,7 +62,6 @@
   }
 
   [[NSNotificationCenter defaultCenter] addObserverForName:@"UserDidLogout" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-    NSLog(@"Logout; %@", loginController);
     if (loginController == nil) {
       loginController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     }

@@ -14,11 +14,6 @@
   self = [super init];
   
   if (self) {
-    
-//    NSLog(@"------- START --------");
-//    NSLog(@"Tweet: %@", dictionary);
-//    NSLog(@"------- END --------");
-    
     self.tweetId = dictionary[@"id_str"];
     self.text = dictionary[@"text"];
     self.user = [[User alloc] initWithDictionary:dictionary[@"user"]];

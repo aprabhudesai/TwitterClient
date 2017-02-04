@@ -75,9 +75,15 @@
   if (tweet.isFavorited) {
     [self.favoriteButton setImage:[UIImage imageNamed:@"twitter_favorite_red_icon"] forState:UIControlStateNormal];
   }
+  else {
+    [self.favoriteButton setImage:[UIImage imageNamed:@"twitter_favorite_icon"] forState:UIControlStateNormal];
+  }
   
   if (tweet.isRetweeted) {
     [self.retweetButton setImage:[UIImage imageNamed:@"twitter_retweet_icon_green"] forState:UIControlStateNormal];
+  }
+  else {
+    [self.retweetButton setImage:[UIImage imageNamed:@"twitter_retweet_icon"] forState:UIControlStateNormal];
   }
 }
 
